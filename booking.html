@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Trip | Dream Destination</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">Dream<span>Destination</span></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="packages.html">Packages</a>
+        <a href="about.html">About Us</a>
+        <a href="booking.html" class="nav-button">Book Your Trip</a>
+    </nav>
+</header>
+
+<section class="page-hero">
+    <p class="tagline">YOUR ADVENTURE STARTS HERE</p>
+    <h1>Plan Your Dream Trip</h1>
+    <p>Enter your travel preferences to create a sample trip summary.</p>
+</section>
+
+<section class="section">
+    <div class="form-container">
+        <h2>Travel Planner</h2>
+
+        <form id="bookingForm" class="booking-form">
+
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName"
+                       placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email"
+                       placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <select id="destination" name="destination" required>
+                    <option value="">Select a destination</option>
+                    <option>Bali, Indonesia</option>
+                    <option>Switzerland</option>
+                    <option>Maldives</option>
+                    <option>Paris, France</option>
+                    <option>Kashmir, India</option>
+                    <option>Jaipur, India</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="travelers">Number of Travelers</label>
+                <select id="travelers" name="travelers" required>
+                    <option value="1">1 traveler</option>
+                    <option value="2">2 travelers</option>
+                    <option value="3">3 travelers</option>
+                    <option value="4">4 travelers</option>
+                    <option value="5">5 travelers</option>
+                    <option value="6">6 travelers</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="departure">Departure Date</label>
+                <input type="date" id="departure" name="departure" required>
+            </div>
+
+            <div class="form-group">
+                <label for="returnDate">Return Date</label>
+                <input type="date" id="returnDate" name="returnDate" required>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="budget">Approximate Budget (₹ per person)</label>
+                <select id="budget" name="budget" required>
+                    <option value="">Choose your budget</option>
+                    <option>Under ₹20,000</option>
+                    <option>₹20,000–₹50,000</option>
+                    <option>₹50,000–₹1,00,000</option>
+                    <option>Above ₹1,00,000</option>
+                </select>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="message">Special Requests (Optional)</label>
+                <textarea id="message" name="message" rows="3"
+                          placeholder="Tell us about your travel preferences"></textarea>
+            </div>
+            
+<a href="trip-summary.html"
+   class="btn primary form-submit full-width">
+    Create My Trip Summary
+</a>
+
+            
+        </form>
+
+        <div id="bookingResult" class="booking-result" hidden aria-live="polite"></div>
+    </div>
+</section>
+
+<footer>
+    <h2>Dream Destination</h2>
+    <p>Explore more. Dream bigger. Travel farther.</p>
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="packages.html">Packages</a>
+        <a href="about.html">About</a>
+    </div>
+    <p class="copyright">© 2026 Dream Destination |/p>
+</footer>
+
+</body>
+</html>
